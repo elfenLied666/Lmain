@@ -23,6 +23,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         L.i("Hello World!!!");
-        L.toastL(this, "Hello World!!!");
+        L.toastL(this, "Hello World!!!!");
     }
 }
