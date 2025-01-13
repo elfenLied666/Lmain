@@ -42,7 +42,7 @@ afterEvaluate{
                 from components.findByName('release')
                 groupId='com.github.elfenLied666'
                 artifactId = 'l'
-                version = '1.0'
+                version = '1.01'
             }
         }
     }

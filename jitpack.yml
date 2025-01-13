@@ -1,2 +1,8 @@
 jdk:
   - openjdk17
+jitpack:
+  configuration:
+    - compile
+  build:
+    source:
+      module: l
