@@ -49,7 +49,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.elfenLied666'
                 artifactId = 'Lmain'
-                version = '1.0.2'
+                version = '1.0.3'
             }
         }
     }
