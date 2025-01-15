@@ -35,15 +35,21 @@ dependencies {
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
 }
-afterEvaluate{
-    publishing{
-        publications{
-            release(MavenPublication){
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
                 from components.findByName('release')
-                groupId='com.github.elfenLied666'
-                artifactId = 'l'
-                version = '1.01'
+                groupId = 'com.github.elfenLied666'
+                artifactId = 'Lmain'
+                version = '1.0.0'
             }
         }
     }
 }
+/*release(MavenPublication) {
+            from components.findByName('release')
+            groupId = 'com.github.elfenLied666'
+            artifactId = 'l'
+            version = '1.01'
+        }*/
