@@ -46,7 +46,7 @@ afterEvaluate {
                 from components.findByName('release')
                 groupId = 'com.github.elfenLied666'
                 artifactId = 'Lmain'
-                version = '1.0.0'
+                version = '1.0.1'
             }
         }
     }
