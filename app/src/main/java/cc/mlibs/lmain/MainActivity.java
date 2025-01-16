@@ -24,5 +24,25 @@ public class MainActivity extends AppCompatActivity {
         });
         L.i("Hello World!!!");
         L.toastL(this, "Hello World!!!!");
+        testTime();
+    }
+
+    private void testTime() {
+        Integer keyTime = L.startMeasureTime();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Integer keyTime2 = L.startMeasureTime();
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                L.endMeasureTimeLog(keyTime2);
+            }
+        }).start();
+        L.toastL(this, "Start measuring");
+        L.toastSh(this, "Time measuring " + L.endMeasureTime(keyTime));
+
     }
 }
